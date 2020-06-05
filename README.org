@@ -1,0 +1,39 @@
+#+TITLE:  org-literate-config
+#+DATE:    June 4, 2020
+#+SINCE:   {replace with next tagged release version}
+#+STARTUP: inlineimages nofold
+
+* Table of Contents :TOC_3:noexport:
+- [[#description][Description]]
+  - [[#maintainers][Maintainers]]
+  - [[#module-flags][Module Flags]]
+- [[#prerequisites][Prerequisites]]
+- [[#configuration][Configuration]]
+
+* Description
+# A summary of what this module does.
+
++ A simple org-mode Literate Configuration setup helper package.
+
+** Maintainers
++ @GuilhermeHaetinger (Author)
+
+** Module Flags
+# If this module has no flags, then...
+This module provides no flags.
+
+* Prerequisites
+This module has no prerequisites.
+
+* Configuration
+# How to configure this module, including common problems and how to address them.
+Set your regular config file (=init.el=) as follows:
+
+#+BEGIN_SRC elisp
+(require 'org-literate-config)
+(setq literate-config-ls '("config-file1" "config-file2" ...))
+(setq main-literate-config "main-file for easy switch")
+(run-configs)
+#+END_SRC
+
+The =main-literate-config= variable is so people can run the interactive function =open-literate-config=, which opens up the main config file for fast access. I keybind it to "C-c c".
