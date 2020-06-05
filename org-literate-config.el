@@ -34,7 +34,8 @@
 
 (defun was-there-change (file-path)
   "Check if there was any change on the file under FILE-PATH.
-Do this by looking at the cached Hash value and the processed one."
+Do this by looking at the cached Hash value and the processed one.
+If there isn't such a file, create one and call was-there-change recursively."
   (let ((md5-file (concat (file-name-directory file-path)
                           (concat (file-name-base file-path) ".hash"))))
   (if (file-exists-p file-path)
