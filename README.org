@@ -9,6 +9,7 @@
   - [[#module-flags][Module Flags]]
 - [[#prerequisites][Prerequisites]]
 - [[#configuration][Configuration]]
+- [[#installation][Installation]]
 
 * Description
 # A summary of what this module does.
@@ -37,3 +38,6 @@ Set your regular config file (=init.el=) as follows:
 #+END_SRC
 
 The =main-literate-config= variable is so people can run the interactive function =open-literate-config=, which opens up the main config file for fast access. I keybind it to "C-c c".
+
+* Installation
+This package isn't yet in MELPA. I'll try adding it in a few days.
