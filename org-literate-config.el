@@ -8,12 +8,12 @@
 ;; Package-Requires: ((org "9.4"))
 ;; Keywords: org, literate, configuration
 ;; URL: https://github.com/GuilhermeHaetinger/org-literate-config
-
+
 ;;; Commentary:
 
-;;; This package provides a simple way to create a set of configuration files
-;;; written in org-mode. A literate way to manage your text editor's attribute.
-
+;; This package provides a simple way to create a set of configuration files
+;; written in org-mode. A literate way to manage your text editor's attribute.
+
 ;;; Code:
 
 (require 'org)
