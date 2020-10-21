@@ -4,6 +4,7 @@
 #+STARTUP: inlineimages nofold
 
 [[https://github.com/GuilhermeHaetinger/org-literate-config/actions][https://github.com/GuilhermeHaetinger/org-literate-config/workflows/tests/badge.svg]]
+Emacs >= 26
 
 * Table of Contents :TOC_3:noexport:
 - [[#description][Description]]
