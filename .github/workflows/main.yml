@@ -25,6 +25,7 @@ jobs:
       - name: Emacs Lisp Linting
         uses: leotaku/elisp-check@v1.0
         with:
+          check: package-lint
           file: org-literate-config.el
           ignore_warnings: true
     
