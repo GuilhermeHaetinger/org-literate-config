@@ -1,0 +1,5 @@
+#+TITLE: Example Config
+
+#+begin_src emacs-lisp :tangle yes
+(print "test")
+#+end_src
