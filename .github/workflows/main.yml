@@ -20,16 +20,6 @@ jobs:
       fail-fast: false
       matrix:
         emacs_version:
-          - 24.1
-          - 24.2
-          - 24.3
-          - 24.4
-          - 24.5
-          - 25.1
-          - 25.2
-          - 25.3
-          - 26.1
-          - 26.2
           - 26.3
         ignore_warnings:
           - true
@@ -44,13 +34,6 @@ jobs:
         with:
           version: ${{ matrix.emacs_version }}
         
-      - name: Emacs Lisp Linting
-        uses: leotaku/elisp-check@v1.0
-        with:
-          check: package-lint
-          file: org-literate-config.el
-          ignore_warnings: true
-    
       - name: Tests
         uses: leotaku/elisp-check@v1.0
         with:
